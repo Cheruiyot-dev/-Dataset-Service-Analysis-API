@@ -3,8 +3,7 @@ This is a learning project aimed at exploring FastAPI, Celery, and containerizat
 Not intended for production use!.
 This is a FastAPI-based web service that allows users to upload CSV files containing datasets, which are then processed and analyzed asynchronously in the background using Celery for task queuing. 
 The analysis results are then persisted in a PostgreSQL database for later retrieval.
-#Features
-
+# Features
 - File Upload: Users can upload CSV files containing datasets through a REST API endpoint.
 - Data Validation: Uploaded CSV files are validated to ensure they are well-formed and compatible with the analysis process.
 - Asynchronous Task Processing: The analysis of uploaded datasets is offloaded to Celery workers running as background tasks,
@@ -14,8 +13,7 @@ The analysis results are then persisted in a PostgreSQL database for later retri
 -  The analysis includes computing summary statistics and other relevant metrics.
 - Result Storage: The analysis results are stored in a PostgreSQL database for later retrieval or further processing.
 - Containerization: The entire application is containerized using Docker and Docker Compose, making it easy to deploy and scale across different environments.
-
-#Technologies Used
+# Technologies Used
 - Python
 - FastAPI
 - Celery
